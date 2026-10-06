@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[node name="Main" type="Node2D" unique_id=31443466]
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=1597207693]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=396678061]
+
+[node name="ColorRect" type="ColorRect" parent="Ground" unique_id=1989503755]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1438769074]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1496835711]
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=67160548]
+offset_right = 40.0
+offset_bottom = 40.0
