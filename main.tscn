@@ -1,16 +1,14 @@
 [gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
+[ext_resource type="Script" uid="uid://bs70uftjxfunn" path="res://spawner.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bdpsslcak08wx" path="res://plate.gd" id="1_ig7tw"]
+
 [node name="Main" type="Node2D" unique_id=31443466]
-
-[node name="Ground" type="StaticBody2D" parent="." unique_id=1597207693]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=396678061]
-
-[node name="ColorRect" type="ColorRect" parent="Ground" unique_id=1989503755]
-offset_right = 40.0
-offset_bottom = 40.0
+script = ExtResource("1_0xm2m")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1438769074]
+position = Vector2(0, 600)
+script = ExtResource("1_ig7tw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1496835711]
 
